@@ -1,1 +1,8 @@
-INSERT INTO GIT_TESTING (INPUT) VALUES ('4'),('5'),('6'),('D'),('E'),('F');
+CREATE FUNCTION GIT_INPUT_TEST_FUNC()
+   RETURNS VARCHAR
+  AS $$
+      SELECT 'Hello'
+        UNION
+        SELECT 'World'
+  $$
+  ;
