@@ -1,2 +1,2 @@
-SELECT 'Hello' INTO :TBL, UNION SELECT 'World'
+SELECT 'Hello' UNION SELECT 'World'
  
